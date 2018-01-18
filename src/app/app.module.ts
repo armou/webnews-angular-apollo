@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import {GraphQLModule} from './apollo.config';
 import { AppComponent } from './app.component';
+import { LinkItemComponent } from './link-item/link-item.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LinkItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    GraphQLModule
   ],
   providers: [],
   bootstrap: [AppComponent]
